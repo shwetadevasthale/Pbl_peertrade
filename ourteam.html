@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% block content %}
+<section id="team" class="team-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="site-heading text-center">
+                    <h2>Our <span>Team</span></h2>
+                    <h4>Meet our team members</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row team-items">
+            <div class="col-md-4 single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <img class="img-fluid" src="{{url_for('static',filename = 'Images/Aarushi.jpeg')}}" alt="Thumb">
+                        <div class="overlay">
+                            <h4>CONTACT:</h4>
+                            <!-- <p>
+                                Lorem 
+                            </p> -->
+                            <div class="social">
+                                <ul>
+                                    <li class="twitter">
+                                        <!-- <a href="#"> -->
+                                        <img src="https://img.icons8.com/color/50/000000/twitter--v1.png" />
+                                        <!-- </a> -->
+                                    </li>
+                                    <li class="Linkedin">
+                                        <!-- <a href="#"> -->
+                                        <img src="{{url_for('static',filename = 'Images/Linkedin.png')}}" />
+                                        <!-- </a> -->
+                                    </li>
+                                    <li class="github">
+                                        <a href="#">
+                                            <img src="{{url_for('static',filename = 'Images/Github.png')}}" />
+                                        </a>
+                                    </li>
+                                    <!-- <li class="vimeo">
+                                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <!-- <span class="message">
+                            <a href="#">
+                                <i class="fas fa-envelope-open"></i>
+                            </a>
+                        </span> -->
+                        <h4>AARUSHI WAGH</h4>
+                        <span>Backend Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <img class="img-fluid" src="{{url_for('static',filename = 'Images/Samruddhi.jpeg')}}" alt="Thumb">
+                        <div class="overlay">
+                            <h4>CONTACT:</h4>
+                            <!-- <p>
+                               Lorem
+                            </p> -->
+                            <div class="social">
+                                <ul>
+                                    <li class="twitter">
+                                        <!-- <a href="#"> -->
+                                        <img src="https://img.icons8.com/color/50/000000/twitter--v1.png" />
+                                        <!-- </a> -->
+                                    </li>
+                                    <li class="Linkedin">
+                                        <!-- <a href="#"> -->
+                                        <img src="{{url_for('static',filename = 'Images/Linkedin.png')}}" />
+                                        <!-- </a> -->
+                                    </li>
+                                    <li class="github">
+                                        <a href="#">
+                                            <img src="{{url_for('static',filename = 'Images/Github.png')}}" />
+                                        </a>
+                                    </li>
+                                    <!-- <li class="vimeo">
+                                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <!-- <span class="message">
+                            <a href="#"><i class="fas fa-envelope-open"></i></a>
+                        </span> -->
+                        <h4>SAMRUDDHI ALEKAR</h4>
+                        <span>Web Designer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <img class="img-fluid" src="{{url_for('static',filename = 'Images/Shweta2.jpeg')}}" alt="Thumb">
+                        <div class="overlay">
+                            <h4>CONTACT:</h4>
+                            <!-- <p>
+                                Lorem
+                            </p> -->
+                            <div class="social">
+                                <ul>
+                                    <li class="twitter">
+                                        <!-- <a href="#"> -->
+                                        <img src="https://img.icons8.com/color/50/000000/twitter--v1.png" />
+                                        <!-- </a> -->
+                                    </li>
+                                    <li class="Linkedin">
+                                        <!-- <a href="#"> -->
+                                        <img src="{{url_for('static',filename = 'Images/Linkedin.png')}}" />
+                                        <!-- </a> -->
+                                    </li>
+                                    <li class="github">
+                                        <!-- <a href="#"> -->
+                                        <img src="{{url_for('static',filename = 'Images/Github.png')}}" />
+                                        <!-- </a> -->
+                                    </li>
+                                    <!-- <li class="vimeo">
+                                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <!-- <span class="message">
+                            <a href="#"><i class="fas fa-envelope-open"></i></a>
+                        </span> -->
+                        <h4>SHWETA DEVASTHALE</h4>
+                        <span>Frontend Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

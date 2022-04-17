@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="text-center text-dark mt-5"><b>SIGN UP</b></h2>
+            <!-- <div class="text-center mb-5 text-dark">Made with bootstrap</div> -->
+            <div class="card my-5">
+
+                <form method="POST" class="form-register" cardbody-color p-lg-5">
+                    {{ form.hidden_tag() }}
+                    <div class="text-center">
+                        <!-- <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png"
+                                class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px"
+                                alt="profile"> -->
+                        <img src="{{url_for('static',filename = 'Images/Profile_logo.png')}}" class="profilelogo" alt="profilelogo">
+                    </div>
+                    {{ form.username.label() }}
+                    {{ form.username(class="form-control", placeholder="Username")}}
+
+                    {{ form.email_address.label() }}
+                    {{ form.email_address(class="form-control", placeholder="Email Address")}}
+
+                    {{ form.password1.label() }}
+                    {{ form.password1(class="form-control", placeholder="Password")}}
+
+                    {{ form.password2.label() }}
+                    {{ form.password2(class="form-control", placeholder="Confirm Password")}}
+
+                    {{ form.submit(class="btn btn-lg btn-block btn-primary")}}
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
